@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using API.Interfaces;
 using API.Services;
 using API.Data;
+using API.Helpers;
 
 namespace API.Extensions
 {
@@ -13,6 +14,8 @@ namespace API.Extensions
         (this IServiceCollection services, IConfiguration config )
         {
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(options =>
             { 
                 //// connection string should come from appsettings development json file
