@@ -51,7 +51,7 @@
       "Country": "Paraguay",
       "Photos": [
         {
-          "URL": "https://randomuser.me/api/portraits/women/64.jpg",
+          "Url": "https://randomuser.me/api/portraits/women/64.jpg",
           "IsMain": true
         }
       ]
@@ -89,8 +89,8 @@
       "Country": "Guam",
       "Photos": [
         {
-          "Url": "https://randomuser.me/api/portraits/women/19.jpg",
-          "IsMain": true
+          "URL": "https://randomuser.me/api/portraits/women/19.jpg",
+          "isMain": true
         }
       ]
     },
@@ -147,8 +147,8 @@
           "Country": "Bahamas",
           "Photos": [
             {
-              "url": "https://randomuser.me/api/portraits/men/36.jpg",
-              "isMain": true
+              "Url": "https://randomuser.me/api/portraits/men/36.jpg",
+              "IsMain": true
             }
           ]
         },
@@ -166,8 +166,8 @@
           "Country": "Togo",
           "Photos": [
             {
-              "url": "https://randomuser.me/api/portraits/men/16.jpg",
-              "isMain": true
+              "Url": "https://randomuser.me/api/portraits/men/16.jpg",
+              "IsMain": true
             }
           ]
         },
