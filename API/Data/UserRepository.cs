@@ -48,7 +48,7 @@ namespace API.Data
                 _ => query.OrderByDescending(u => u.LastActive)
             };
 
-            return await PagedList<MemberDto>.CrateAsync(query.ProjectTo<MemberDto>(_mapper
+            return await PagedList<MemberDto>.CreateAsync(query.ProjectTo<MemberDto>(_mapper
                     .ConfigurationProvider).AsNoTracking(), 
                      userParams.PageNumber, userParams.PageSize);
         }
