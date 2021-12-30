@@ -39,7 +39,7 @@ namespace API.Controllers
 
         }
 
-
+        // [Authorize(Roles = "Admin")]  // we will not use like this, we can use with Policy based authorization
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers(
             [FromQuery]UserParams userParams)
@@ -63,6 +63,7 @@ namespace API.Controllers
             return Ok(users);   
         }
 
+        // [Authorize(Roles = "Member")] // we will not use like this, we can use with Policy based authorization
         [HttpGet("{username}", Name = "GetUser")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
