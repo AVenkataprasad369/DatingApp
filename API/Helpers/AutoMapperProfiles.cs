@@ -26,8 +26,10 @@ namespace API.Helpers
              .ForMember(dst => dst.RecipientPhotoUrl, opt => opt.MapFrom(src =>
               src.Recipient.Photos.FirstOrDefault(x => x.IsMain).Url));
 
-            CreateMap<DateTime, DateTime>().ConvertUsing
-                (d => DateTime.SpecifyKind(d, DateTimeKind.Utc));
+            //// we no longer need this code to convert the date to UTcNow, because we added 
+            //// class in DataContext class
+            // CreateMap<DateTime, DateTime>().ConvertUsing
+            //     (d => DateTime.SpecifyKind(d, DateTimeKind.Utc));
         }
     }
 }
